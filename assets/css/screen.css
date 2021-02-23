@@ -20,8 +20,8 @@ h1 {
 
 ul.formlist {
   list-style-position: inside;
-  /*margin-bottom: 1.2em;  24 / 20*/
 }
+
 li {
   text-align: center;
   margin: 0.2em; /* 4 / 20*/

@@ -8,8 +8,37 @@ html {
   color: #e6e6e6;
 }
 
+@supports (display: grid) {
+  html { padding: 1em 0; }
+}
+
 h1 {
   font-size: 1.95315em; /* 39.063 / 20 */
   line-height: 1.228784272em; /* 48 / 39.063 */
   text-align: center;
+}
+
+ul.formlist {
+  list-style-position: inside;
+  /*margin-bottom: 1.2em;  24 / 20*/
+}
+li {
+  text-align: center;
+  margin: 0.2em; /* 4 / 20*/
+  margin-bottom: 0.8em;
+}
+
+footer {
+  font-size: 0.8em; /* 16 / 20 */
+}
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0.625em,1fr) minmax(5ch,80ch) minmax(0.625em,1fr);
+}
+
+header,
+main,
+footer {
+  grid-column: 2 / 3;
 }
